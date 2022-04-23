@@ -1,7 +1,7 @@
 ﻿@page
 @model PersonalDataModel
 @{
-    ViewData["Title"] = "Personal Data";
+    ViewData["Title"] = "Личная информация";
     ViewData["ActivePage"] = ManageNavPages.PersonalData;
 }
 
@@ -9,16 +9,16 @@
 
 <div class="row">
     <div class="col-md-6">
-        <p>Your account contains personal data that you have given us. This page allows you to download or delete that data.</p>
+        <p>На этой старнице можно скачать и удалить данные о своем аккаунте.</p>
         <p>
-            <strong>Deleting this data will permanently remove your account, and this cannot be recovered.</strong>
+            <strong>При удалении аккаунта данные не возможно будет восстановить</strong>
         </p>
         <form id="download-data" asp-page="DownloadPersonalData" method="post">
-            <button class="btn btn-primary" type="submit">Download</button>
+            <button class="btn btn-primary" type="submit">Скачать данные</button>
         </form>
         <br />
         <p>
-            <a id="delete" asp-page="DeletePersonalData" class="btn btn-danger">Delete</a>
+            <a id="delete" asp-page="DeletePersonalData" class="btn btn-danger">Удалить</a>
         </p>
     </div>
 </div>

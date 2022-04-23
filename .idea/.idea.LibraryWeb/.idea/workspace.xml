@@ -8,13 +8,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35c3aa90-f44e-44c2-8f3a-bc8c4e2eb3d9" name="Changes" comment="translate 0.1">
+    <list default="true" id="35c3aa90-f44e-44c2-8f3a-bc8c4e2eb3d9" name="Changes" comment="Перевод 0.2">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LibraryWeb/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LibraryWeb/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryWeb/Areas/Identity/Pages/Account/Manage/ChangePassword.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryWeb/Areas/Identity/Pages/Account/Manage/ChangePassword.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryWeb/Areas/Identity/Pages/Account/Manage/ChangePassword.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryWeb/Areas/Identity/Pages/Account/Manage/ChangePassword.cshtml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryWeb/Areas/Identity/Pages/Account/Manage/Email.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryWeb/Areas/Identity/Pages/Account/Manage/Email.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryWeb/Areas/Identity/Pages/Account/Manage/Email.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryWeb/Areas/Identity/Pages/Account/Manage/Email.cshtml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryWeb/Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryWeb/Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryWeb/Areas/Identity/Pages/Account/Manage/DeletePersonalData.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryWeb/Areas/Identity/Pages/Account/Manage/DeletePersonalData.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryWeb/Areas/Identity/Pages/Account/Manage/PersonalData.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryWeb/Areas/Identity/Pages/Account/Manage/PersonalData.cshtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +19,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock://C:/Users/romas/RiderProjects/TulaHack/LibraryWeb/Areas/Identity/Pages/Account/Manage/ChangePassword.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/romas/RiderProjects/TulaHack/LibraryWeb/Areas/Identity/Pages/Account/Manage/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/romas/RiderProjects/TulaHack/LibraryWeb/Pages/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/romas/RiderProjects/TulaHack/LibraryWeb/Pages/Shared/_LoginPartial.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
@@ -89,7 +87,7 @@
       <option name="presentableId" value="Default" />
       <updated>1650653844428</updated>
       <workItem from="1650653913157" duration="7000" />
-      <workItem from="1650700026510" duration="6567000" />
+      <workItem from="1650700026510" duration="7703000" />
     </task>
     <task id="LOCAL-00001" summary="Register">
       <created>1650701692423</created>
@@ -119,7 +117,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650705211173</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Перевод 0.2">
+      <created>1650706757031</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1650706757031</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,6 +149,7 @@
     <MESSAGE value="Кнопки на главной странице" />
     <MESSAGE value="Настройка аккаунта" />
     <MESSAGE value="translate 0.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="translate 0.1" />
+    <MESSAGE value="Перевод 0.2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Перевод 0.2" />
   </component>
 </project>
