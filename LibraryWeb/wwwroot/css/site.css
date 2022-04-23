@@ -66,10 +66,10 @@ button.accept-policy {
 /* Sticky footer styles
 -------------------------------------------------- */
 
-@font-face {
+/*@font-face {
     font-family: Proxima Nova;
     src: url(../font/ProximaNova-Regular.woff);
-}
+}*/
 
 .slider__wrapper {
     overflow: hidden;
@@ -118,6 +118,7 @@ button.accept-policy {
 
 .footer nav {
     margin-top: 50px;
+    display: flex;
 }
 
 .footer nav a:hover {
@@ -245,4 +246,12 @@ hr {
 
 .navbar-light .navbar-nav .nav-link {
     color: #e30;
+}
+.page-footer__nav
+{
+    display: flex;
+    flex-direction: row;
+}
+li{
+    list-style: none;
 }
