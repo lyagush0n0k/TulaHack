@@ -8,17 +8,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35c3aa90-f44e-44c2-8f3a-bc8c4e2eb3d9" name="Changes" comment="Photo_fix">
-      <change afterPath="$PROJECT_DIR$/LibraryWeb/Pages/Book.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LibraryWeb/Pages/Book.cshtml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LibraryWeb/wwwroot/css/stylebook.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LibraryWeb/wwwroot/img/ph_05.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LibraryWeb/wwwroot/img/python.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LibraryWeb/wwwroot/img/slide-3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.LibraryWeb/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LibraryWeb/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryWeb/Pages/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryWeb/Pages/Shared/_Layout.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryWeb/wwwroot/css/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryWeb/wwwroot/css/site.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryWeb/wwwroot/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryWeb/wwwroot/js/script.js" afterDir="false" />
+    <list default="true" id="35c3aa90-f44e-44c2-8f3a-bc8c4e2eb3d9" name="Changes" comment="Book page">
+      <change beforePath="$PROJECT_DIR$/LibraryWeb/wwwroot/css/stylebook.css" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryWeb/wwwroot/css/stylebook.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +109,7 @@
       <option name="presentableId" value="Default" />
       <updated>1650653844428</updated>
       <workItem from="1650653913157" duration="7000" />
-      <workItem from="1650700026510" duration="26342000" />
+      <workItem from="1650700026510" duration="26652000" />
     </task>
     <task id="LOCAL-00001" summary="Register">
       <created>1650701692423</created>
@@ -211,7 +202,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650727733100</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Book page">
+      <created>1650731656255</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1650731656255</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -256,6 +254,7 @@
     <MESSAGE value="Bootstrap_fix" />
     <MESSAGE value="Test_fix" />
     <MESSAGE value="Photo_fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="Photo_fix" />
+    <MESSAGE value="Book page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Book page" />
   </component>
 </project>
