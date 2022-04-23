@@ -11,9 +11,10 @@ namespace LibraryWeb.Models
         public uint ID { get; set; }
         public string Name { get; set; }
         public string Author { get; set; }
+        public string Img { get; set; }
         public uint Count { get; set; }
         public BookGroup Type { get; set; }
         public uint Date { get; set; }
-        public List<Language> languages { get; set; }
+        public List<Language> Languages { get; set; }
     }
 }
