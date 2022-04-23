@@ -81,3 +81,199 @@ body {
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
 }
+
+.content {
+    margin-top: 110px;
+}
+
+@font-face {
+    font-family: Proxima Nova;
+    src: url(../font/ProximaNova-Regular.woff);
+}
+
+.slider__wrapper {
+    overflow: hidden;
+}
+
+.slider__item {
+    flex: 0 0 50%;
+    max-width: 300px;
+    height: 370px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 7rem;
+}
+
+
+.slider {
+    margin-top: 100px;
+}
+
+
+.bookoctave {
+    font-family: 'Stardos Stencil',sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    text-align: center;
+    color: #000000;
+    margin-top: 81px;
+}
+
+.bluetext {
+    font-family: 'Stardos Stencil',sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+    color: #2E2EB5;
+    margin-top: 25px;
+}
+
+.holl {
+    font-family: 'Stardos Stencil',sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    color: #000000;
+}
+
+hr {
+    border: 1px solid black;
+}
+
+.holltext {
+    font-family: 'Stardos Stencil',sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.carousel .slide {
+    margin-top: 49px;
+}
+
+.kids {
+    margin-bottom: 50px;
+}
+
+.footer {
+    display: flex;
+    align-items: flex-end;
+    bottom: 0;
+    background-color: #000;
+    padding-top: 50px;
+    color: #fff;
+}
+
+    .footer a {
+        color: #fff;
+        transition: 0.5s;
+    }
+
+        .footer a span {
+            color: gray;
+        }
+
+        .footer a:hover {
+            text-decoration: none;
+            color: gray;
+        }
+
+        .footer a span:hover {
+            color: #fff;
+        }
+
+.social-link {
+    display: flex;
+    flex-direction: column;
+}
+
+    .social-link > .group1 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .social-link a svg {
+        width: 40px;
+        height: 40px;
+        color: gray;
+        border: 1px solid gray;
+        border-radius: 50%;
+        padding: 5px;
+        background: none;
+    }
+
+.group2 {
+    margin-top: 15px;
+}
+
+.fa {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gray;
+    border-radius: 50%;
+}
+
+.group2 a:not(:first-child) {
+    margin-left: 8px;
+}
+
+.group1 a:not(:first-child) {
+    margin-left: 10px;
+}
+
+.group1 a svg {
+    transition: 1s;
+}
+
+.group2 a svg {
+    transition: 1s;
+}
+
+.group1 a svg:hover {
+    color: #fff;
+}
+
+.group2 a svg:hover {
+    color: #fff;
+}
+
+.footer nav {
+    margin-top: 50px;
+}
+
+    .footer nav a:hover {
+        color: #e30;
+    }
+
+.footer {
+    padding-top: 150px;
+}
+
+.btn {
+    border: none;
+    color: #e30;
+}
+
+.input {
+    width: 600px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #e30;
+}
+
+ 

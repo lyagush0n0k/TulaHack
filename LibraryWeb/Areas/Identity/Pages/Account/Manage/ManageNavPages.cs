@@ -24,6 +24,10 @@ namespace LibraryWeb.Areas.Identity.Pages.Account.Manage
 
         public static string TwoFactorAuthentication => "TwoFactorAuthentication";
 
+        public static string RoleManager => "RoleManager";
+        
+        public static string RoleManagerNavClass(ViewContext viewContext) => PageNavClass(viewContext, RoleManager);
+
         public static string IndexNavClass(ViewContext viewContext) => PageNavClass(viewContext, Index);
 
         public static string EmailNavClass(ViewContext viewContext) => PageNavClass(viewContext, Email);
