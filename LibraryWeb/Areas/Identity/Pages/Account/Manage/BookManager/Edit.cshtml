@@ -3,10 +3,12 @@
 @model LibraryWeb.Areas.Identity.Pages.Account.Manage.BookManager.EditModel
 
 @{
-    ViewData["Title"] = "Редактирование книги";
+    ViewData["Title"] = "Edit";
 }
 
-<h1>Редактирование книги</h1>
+
+
+<h4>Редактирование книги</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -19,7 +21,7 @@
                 <span asp-validation-for="Book.Name" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label class="control-label">Автор книги</label>
+                <label class="control-label">Автор</label>
                 <input asp-for="Book.Author" class="form-control" />
                 <span asp-validation-for="Book.Author" class="text-danger"></span>
             </div>
@@ -44,20 +46,19 @@
                 <span asp-validation-for="Book.Date" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label class="control-label">Язык книги</label>
+                <label class="control-label">Язык</label>
                 <select asp-for="Book.Languages" asp-items="Html.GetEnumSelectList<Language>()" class="form-control"></select>
                 <span asp-validation-for="Book.Languages" class="text-danger"></span>
             </div>
-            <br />
             <div class="form-group">
-                <input type="submit" value="Сохранить" class="btn btn-primary" />
+                <input type="submit" value="Save" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-page="../BookManager">Назад</a>
+    <a asp-page="../BookManager">Back to List</a>
 </div>
 
 @section Scripts {
