@@ -44,7 +44,7 @@ namespace LibraryWeb.Areas.Identity.Pages.Account
             var result = await _userManager.ChangeEmailAsync(user, email, code);
             if (!result.Succeeded)
             {
-                StatusMessage = "Error changing email.";
+                StatusMessage = "Ошибка изменения email адреса";
                 return Page();
             }
 
@@ -53,12 +53,12 @@ namespace LibraryWeb.Areas.Identity.Pages.Account
             var setUserNameResult = await _userManager.SetUserNameAsync(user, email);
             if (!setUserNameResult.Succeeded)
             {
-                StatusMessage = "Error changing user name.";
+                StatusMessage = "Ошибка изменения имени пользователя";
                 return Page();
             }
 
             await _signInManager.RefreshSignInAsync(user);
-            StatusMessage = "Thank you for confirming your email change.";
+            StatusMessage = "Изменение адреса электронной почты подтвержденно";
             return Page();
         }
     }
