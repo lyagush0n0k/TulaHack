@@ -8,11 +8,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35c3aa90-f44e-44c2-8f3a-bc8c4e2eb3d9" name="Changes" comment="Gap_fix">
+    <list default="true" id="35c3aa90-f44e-44c2-8f3a-bc8c4e2eb3d9" name="Changes" comment="Search_bar">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LibraryWeb/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LibraryWeb/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryWeb/Pages/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryWeb/Pages/Shared/_Layout.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryWeb/Pages/Shared/_LoginPartial.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryWeb/Pages/Shared/_LoginPartial.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryWeb/wwwroot/css/stylebook.css" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryWeb/wwwroot/css/stylebook.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryWeb/Areas/Identity/Pages/Account/Logout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryWeb/Areas/Identity/Pages/Account/Logout.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryWeb/wwwroot/lib/jquery-validation/dist/jquery.validate.js" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryWeb/wwwroot/lib/jquery-validation/dist/jquery.validate.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,8 +41,10 @@
     <setting file="mock://C:/Users/romas/RiderProjects/TulaHack/LibraryWeb/Pages/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/romas/RiderProjects/TulaHack/LibraryWeb/Pages/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/romas/RiderProjects/TulaHack/LibraryWeb/Pages/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/romas/RiderProjects/TulaHack/LibraryWeb/Pages/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/romas/RiderProjects/TulaHack/LibraryWeb/Pages/Shared/_LoginPartial.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/LibraryWeb/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/LibraryWeb/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/LibraryWeb/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/LibraryWeb/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/LibraryWeb/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map" root0="FORCE_HIGHLIGHTING" />
@@ -113,7 +114,7 @@
       <option name="presentableId" value="Default" />
       <updated>1650653844428</updated>
       <workItem from="1650653913157" duration="7000" />
-      <workItem from="1650700026510" duration="29691000" />
+      <workItem from="1650700026510" duration="31152000" />
     </task>
     <task id="LOCAL-00001" summary="Register">
       <created>1650701692423</created>
@@ -220,7 +221,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650731920098</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Search_bar">
+      <created>1650735005204</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1650735005204</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -267,6 +275,7 @@
     <MESSAGE value="Photo_fix" />
     <MESSAGE value="Book page" />
     <MESSAGE value="Gap_fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="Gap_fix" />
+    <MESSAGE value="Search_bar" />
+    <option name="LAST_COMMIT_MESSAGE" value="Search_bar" />
   </component>
 </project>

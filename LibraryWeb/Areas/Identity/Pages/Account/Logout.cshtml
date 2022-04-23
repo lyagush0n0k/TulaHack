@@ -5,7 +5,7 @@
 }
 
 <header>
-    <h1>@ViewData["Title"]</h1>
+    <h1>Выход из аккаунта</h1>
     @{
         if (User.Identity.IsAuthenticated)
         {
@@ -15,7 +15,7 @@
         }
         else
         {
-            <p>You have successfully logged out of the application.</p>
+            <p>Вы успешно вышли из аккаунта</p>
         }
     }
 </header>
