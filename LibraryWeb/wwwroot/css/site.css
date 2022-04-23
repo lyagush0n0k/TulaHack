@@ -218,6 +218,7 @@ hr {
     align-items: center;
     border: 1px solid gray;
     border-radius: 50%;
+    color: gray;
 }
 
 .group2 a:not(:first-child) {
