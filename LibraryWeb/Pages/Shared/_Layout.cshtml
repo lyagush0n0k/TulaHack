@@ -5,8 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - LibraryWeb</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" />
-    <link rel="stylesheet" href="~/css/slider.css" />
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,700&display=swap"
+		rel="stylesheet"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"/>
+	<link rel="stylesheet" href="~/css/slider.css" />
+	<script src="~/js/slider.js" asp-append-version="true"></script>
+    <script src="~/js/script.js" asp-append-version="true"></script>
+	<link rel="stylesheet" href="~/css/site.css" />
+
 </head>
 <body>
     <header>
@@ -39,15 +51,122 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2022 - LibraryWeb - <a asp-area="" asp-page="/Privacy">Privacy</a>
-        </div>
+			<div class="row">
+				<div class="page-contact col-lg-4">
+					<h2>Кластер «Октава»</h2>
+					<div class="page-footer__content">
+						<p class="">г. Тула, Центральный переулок, 18</p>
+						<p>
+							<a href="tel:+7 (4872) 77-02-07">+7 (4872) 77-02-07</a><br>
+							<a href="mailto:info@oktavaklaster.ru"> <span>info@oktavaklaster.ru</span> </a>
+						</p>
+						<p>Время работы:
+							<br>
+							ежедневно с 12:00 до 21:00
+						</p>
+						<p><a href="https://oktavaklaster.ru/news/2021/12/27/pravila-kommercheskih-foto/">Правила съемок</a>
+						</p>
+					</div>
+					<div class="social-link">
+						<div class="group1">
+							<a href="https://www.youtube.com/channel/UCHaC1J-t9Fu4Sci-9XNThnw?app=desktop"><svg
+									xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+									class="bi bi-youtube" viewBox="0 0 16 16">
+									<path
+										d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
+								</svg>
+							</a>
+							<a href="https://vk.com/oktava_klaster">
+								<i class="fa fa-vk" aria-hidden="true"></i>
+							</a>
+						</div>
+						<div class="group2">
+							<a href="https://t.me/oktava_klaster"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+									height="16" fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
+									<path
+										d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z" />
+								</svg>
+							</a>
+							<a href="https://www.tiktok.com/@@oktava_klaster">
+								<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+									class="bi bi-tiktok" viewBox="0 0 16 16">
+									<path
+										d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3V0Z" />
+								</svg>
+							</a>
+						</div>
+
+					</div>
+				</div>
+				<div class="col-lg-8">
+					<div style="position:relative;overflow:hidden;">
+						<a href="https://yandex.ru/maps/org/tvorcheskiy_industrialny_klaster_oktava/82217882164/?utm_medium=mapframe&utm_source=maps"
+							style="color:#eee;font-size:12px;position:absolute;top:0px;">Творческий индустриальный кластер
+							Октава</a>
+						<a href="https://yandex.ru/maps/15/tula/category/cultural_center/184105880/?utm_medium=mapframe&utm_source=maps"
+							style="color:#eee;font-size:12px;position:absolute;top:14px;">Культурный центр в Туле</a>
+						<a href="https://yandex.ru/maps/15/tula/category/courses_and_master_classes/184106220/?utm_medium=mapframe&utm_source=maps"
+							style="color:#eee;font-size:12px;position:absolute;top:28px;">Курсы и мастер-классы в Туле</a>
+						<iframe src="https://yandex.ru/map-widget/v1/-/CCUFeSea8A" width="904" height="206" frameborder="1"
+							allowfullscreen="true" style="position:relative;"></iframe>
+					</div>
+				</div>
+			</div>
+			<nav class="navbar">
+				<div class="container col-lg-3" >
+					<ul class="nav navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link text-grey" href="/events/">Афиша</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-grey" href="/about/">О кластере</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-grey" href="/residents/">Резиденты</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-grey" href="/news/">Новости</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-grey" href="/museum/">Музей станка</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-grey" href="https://vtsh-oktava.ru/" target="_blank">Высшая техническая
+								школа</a>
+						</li>
+					</ul>
+				</div>
+				<div class="container col-lg-3">
+					<ul class="nav navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link text-grey" href="/books/">Книги на&nbsp;Октаве</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-grey" href="/studio/">Студия звукозаписи</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-grey" href="/cafe/">Кафе</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-grey" href="/coworking/">Коворкинг</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-grey" href="/contacts/">Контакты</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="container col-lg-3 flex-grow-1">
+						<a class="link nav-link text-grey" href="https://oktava-klaster.timepad.ru" target="_blank">Купить билеты</a>
+				</div>
+			</nav>
+		</div>
     </footer>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
-    <script src="~/js/slider.js" asp-append-version="true"></script>
-    <script src="~/js/script.js" asp-append-version="true"></script>
+    
 
     @await RenderSectionAsync("Scripts", required: false)
 </body>
