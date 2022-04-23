@@ -1,4 +1,5 @@
 ﻿@page
+@using LibraryWeb.Models
 @model LibraryWeb.Areas.Identity.Pages.Account.Manage.BookManager.EditModel
 
 @{
@@ -36,7 +37,7 @@
             </div>
             <div class="form-group">
                 <label asp-for="Book.Type" class="control-label"></label>
-                <select asp-for="Book.Type" class="form-control"></select>
+                <select asp-for="Book.Type" asp-items="Html.GetEnumSelectList<BookGroup>()" class="form-control"></select>
                 <span asp-validation-for="Book.Type" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -46,7 +47,7 @@
             </div>
             <div class="form-group">
                 <label asp-for="Book.Languages" class="control-label"></label>
-                <select asp-for="Book.Languages" class="form-control"></select>
+                <select asp-for="Book.Languages" asp-items="Html.GetEnumSelectList<Language>()" class="form-control"></select>
                 <span asp-validation-for="Book.Languages" class="text-danger"></span>
             </div>
             <div class="form-group">

@@ -66,7 +66,7 @@ namespace LibraryWeb.Areas.Identity.Pages.Account.Manage.BookManager
                 }
             }
 
-            return RedirectToPage("./Index");
+            return RedirectToPage("../BookManager");
         }
 
         private bool BookExists(uint id)

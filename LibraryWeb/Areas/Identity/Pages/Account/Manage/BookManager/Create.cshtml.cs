@@ -38,7 +38,7 @@ namespace LibraryWeb.Areas.Identity.Pages.Account.Manage.BookManager
             _context.Book.Add(Book);
             await _context.SaveChangesAsync();
 
-            return RedirectToPage("./Index");
+            return RedirectToPage("../BookManager");
         }
     }
 }
