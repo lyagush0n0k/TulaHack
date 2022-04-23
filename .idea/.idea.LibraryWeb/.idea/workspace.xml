@@ -8,28 +8,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35c3aa90-f44e-44c2-8f3a-bc8c4e2eb3d9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.LibraryWeb/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LibraryWeb/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryWeb/Areas/Identity/Pages/Account/AccessDenied.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryWeb/Areas/Identity/Pages/Account/AccessDenied.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryWeb/Areas/Identity/Pages/Account/ConfirmEmail.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryWeb/Areas/Identity/Pages/Account/ConfirmEmail.cshtml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryWeb/Areas/Identity/Pages/Account/ConfirmEmailChange.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryWeb/Areas/Identity/Pages/Account/ConfirmEmailChange.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryWeb/Areas/Identity/Pages/Account/ConfirmEmailChange.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryWeb/Areas/Identity/Pages/Account/ConfirmEmailChange.cshtml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryWeb/Areas/Identity/Pages/Account/ExternalLogin.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryWeb/Areas/Identity/Pages/Account/ExternalLogin.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryWeb/Areas/Identity/Pages/Account/ForgotPassword.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryWeb/Areas/Identity/Pages/Account/ForgotPassword.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryWeb/Areas/Identity/Pages/Account/ForgotPasswordConfirmation.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryWeb/Areas/Identity/Pages/Account/ForgotPasswordConfirmation.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryWeb/Areas/Identity/Pages/Account/Lockout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryWeb/Areas/Identity/Pages/Account/Lockout.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryWeb/Areas/Identity/Pages/Account/Login.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryWeb/Areas/Identity/Pages/Account/Login.cshtml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryWeb/Areas/Identity/Pages/Account/LoginWith2fa.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryWeb/Areas/Identity/Pages/Account/LoginWith2fa.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryWeb/Areas/Identity/Pages/Account/LoginWith2fa.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryWeb/Areas/Identity/Pages/Account/LoginWith2fa.cshtml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryWeb/Areas/Identity/Pages/Account/LoginWithRecoveryCode.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryWeb/Areas/Identity/Pages/Account/LoginWithRecoveryCode.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryWeb/Areas/Identity/Pages/Account/LoginWithRecoveryCode.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryWeb/Areas/Identity/Pages/Account/LoginWithRecoveryCode.cshtml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryWeb/Areas/Identity/Pages/Account/RegisterConfirmation.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryWeb/Areas/Identity/Pages/Account/RegisterConfirmation.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryWeb/Areas/Identity/Pages/Account/ResendEmailConfirmation.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryWeb/Areas/Identity/Pages/Account/ResendEmailConfirmation.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryWeb/Areas/Identity/Pages/Account/ResendEmailConfirmation.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryWeb/Areas/Identity/Pages/Account/ResendEmailConfirmation.cshtml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryWeb/Areas/Identity/Pages/Account/ResetPassword.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryWeb/Areas/Identity/Pages/Account/ResetPassword.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryWeb/Areas/Identity/Pages/Account/ResetPassword.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryWeb/Areas/Identity/Pages/Account/ResetPassword.cshtml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryWeb/Areas/Identity/Pages/Account/ResetPasswordConfirmation.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryWeb/Areas/Identity/Pages/Account/ResetPasswordConfirmation.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryWeb/Areas/Identity/Pages/Error.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryWeb/Areas/Identity/Pages/Error.cshtml" afterDir="false" />
+    <list default="true" id="35c3aa90-f44e-44c2-8f3a-bc8c4e2eb3d9" name="Changes" comment="Translate 0.7">
+      <change beforePath="$PROJECT_DIR$/LibraryWeb/Areas/Identity/Pages/Account/Manage/ChangePassword.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryWeb/Areas/Identity/Pages/Account/Manage/ChangePassword.cshtml.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +23,7 @@
     <setting file="file://$PROJECT_DIR$/LibraryWeb/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/LibraryWeb/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/LibraryWeb/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/romas/RiderProjects/TulaHack/LibraryWeb/Areas/Identity/Pages/Account/AccessDenied.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/LibraryWeb/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/LibraryWeb/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/LibraryWeb/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map" root0="FORCE_HIGHLIGHTING" />
@@ -111,7 +92,7 @@
       <workItem from="1650653913157" duration="7000" />
       <workItem from="1650700026510" duration="31152000" />
       <workItem from="1650750636030" duration="247000" />
-      <workItem from="1650750918490" duration="2308000" />
+      <workItem from="1650750918490" duration="2813000" />
     </task>
     <task id="LOCAL-00001" summary="Register">
       <created>1650701692423</created>
@@ -225,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650735005204</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Translate 0.7">
+      <created>1650753286825</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1650753286825</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -635,6 +623,7 @@
     <MESSAGE value="Book page" />
     <MESSAGE value="Gap_fix" />
     <MESSAGE value="Search_bar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Search_bar" />
+    <MESSAGE value="Translate 0.7" />
+    <option name="LAST_COMMIT_MESSAGE" value="Translate 0.7" />
   </component>
 </project>
