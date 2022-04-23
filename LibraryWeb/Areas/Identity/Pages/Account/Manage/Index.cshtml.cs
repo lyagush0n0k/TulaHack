@@ -35,17 +35,17 @@ namespace LibraryWeb.Areas.Identity.Pages.Account.Manage
 
         public class InputModel
         {
-            [Display(Name = "First Name")]
+            [Display(Name = "Имя")]
             public string FirstName { get; set; }
-            [Display(Name = "Last Name")]
+            [Display(Name = "Фамилия")]
             public string LastName { get; set; }
-            [Display(Name = "Username")]
+            [Display(Name = "Имя пользователя")]
             public string Username { get; set; }
             [Phone]
-            [Display(Name = "Phone number")]
+            [Display(Name = "Номер телефона")]
             public string PhoneNumber { get; set; }
 
-            [Display(Name = "Profile Picture")]
+            [Display(Name = "Аватарка")]
             public byte[] ProfilePicture { get; set; }
         }
 
@@ -123,13 +123,13 @@ namespace LibraryWeb.Areas.Identity.Pages.Account.Manage
                 var setPhoneResult = await _userManager.SetPhoneNumberAsync(user, Input.PhoneNumber);
                 if (!setPhoneResult.Succeeded)
                 {
-                    StatusMessage = "Unexpected error when trying to set phone number.";
+                    StatusMessage = "Неожиданная ошибка с номером телефона";
                     return RedirectToPage();
                 }
             }
 
             await _signInManager.RefreshSignInAsync(user);
-            StatusMessage = "Your profile has been updated";
+            StatusMessage = "Информация в профиле была обнавлена";
             return RedirectToPage();
         }
     }
