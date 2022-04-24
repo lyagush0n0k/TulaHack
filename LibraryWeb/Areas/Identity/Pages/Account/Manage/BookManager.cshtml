@@ -20,10 +20,7 @@
                 @Html.DisplayNameFor(model => model.Book[0].Author)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Book[0].Img)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Book[0].Count)
+                Издатель
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Book[0].Type)
@@ -34,7 +31,6 @@
             <th>
                 @Html.DisplayNameFor(model => model.Book[0].Languages)
             </th>
-            <th></th>
         </tr>
     </thead>
     <tbody>
@@ -47,10 +43,7 @@
                 @Html.DisplayFor(modelItem => item.Author)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Img)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Count)
+                @Html.DisplayFor(modelItem => item.Publish)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Type)
@@ -62,8 +55,10 @@
                 @Html.DisplayFor(modelItem => item.Languages)
             </td>
             <td>
-                <a asp-page="./BookManager/Edit" asp-route-id="@item.ID">Редактировать</a> |
-                <a asp-page="./BookManager/Details" asp-route-id="@item.ID">Подробности</a> |
+                <a asp-page="./BookManager/Edit" asp-route-id="@item.ID">Редактировать</a>
+                <br/>
+                <a asp-page="./BookManager/Details" asp-route-id="@item.ID">Подробности</a>
+                <br/>
                 <a asp-page="./BookManager/Delete" asp-route-id="@item.ID">Удалить</a>
             </td>
         </tr>

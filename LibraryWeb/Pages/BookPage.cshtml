@@ -1,8 +1,9 @@
-﻿@page
-@model LibraryWeb.Pages.Book
+﻿@page "{id}"
+@model LibraryWeb.Pages.BookPage
 
 @{
     Layout = "_Layout";
+    ViewData["Title"] = @Model.Book.Name;
 }
 
 <!DOCTYPE html>
@@ -19,18 +20,14 @@
 	<link rel="stylesheet" href="https://kenwheeler.github.io/slick/slick/slick-theme.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-<title>Document</title>
 
 <link rel="stylesheet" href="~/css/stylebook.css">
 
 </head>
 
 <body>
-	
-	
-
 	<div class=" content container">
-		<h2>Springer: Handbook Acoustics</h2>
+		<h2>@Model.Book.Name</h2>
 		<span>Артикул: 76486488</span>
 		<br>
 
@@ -38,14 +35,14 @@
 		<div class="row ">
 			<div class="column col-lg-6 col-md-12 small-11 small-centered">
 				<div class="slider slider-single">
-					<div><img src=" img/python.jpg" alt=""></div>
-					<div><img src=" img/ph_05.jpg" alt=""></div>
-					<div><img src=" img/slide-3.jpg" alt=""></div>
+					<div><img src="/img/python.jpg" alt=""></div>
+					<div><img src="/img/ph_05.jpg" alt=""></div>
+					<div><img src="/img/slide-3.jpg" alt=""></div>
 				</div>
 				<div class="slider slider-nav">
-					<div><img src=" img/python.jpg"  width="433px"alt=""></div>
-					<div><img src=" img/ph_05.jpg" alt=""></div>
-					<div><img src=" img/slide-3.jpg" alt=""></div>
+					<div><img src="/img/python.jpg"  width="433px"alt=""></div>
+					<div><img src="/img/ph_05.jpg" alt=""></div>
+					<div><img src="/img/slide-3.jpg" alt=""></div>
 					
 				</div>
 			</div>
@@ -55,15 +52,11 @@
 				<p>“Беспрецедентное современное руководство, отражающее эту богатую междисциплинарную природу под редакцией одного из признанных мастеров в этой области Томаса Россинга...</p>
 				<h2>Характеристики</h2>
 				<div class="charact">
-					<p class="">Автор: ..............................</p>
-		
-					<p class="">Жанр: ...............................</p>	
-					  
-					<p class="">Издательство: .................</p>	
-					  
-					<p class="">Год выпуска: ....................</p>		
-					  
-					<p class="">	Язык: ................................</p>
+					<p>Автор: @Model.Book.Author</p>
+					<p>Жанр: @Model.Book.Type</p>	 
+					<p>Издательство: @Model.Book.Publish</p>	
+					<p>Год выпуска: @Model.Book.Date</p>		
+					<p>Язык: @Model.Book.Languages</p>
 					  
 				</div>
 				
@@ -71,7 +64,6 @@
 		</div>
 	</div>
 
-	
 	</div>
 
 <script>
@@ -86,7 +78,6 @@ $('.slider-single').slick({
     speed: 400,
     cssEase: 'cubic-bezier(0.77, 0, 0.18, 1)',
 });
-
 $('.slider-nav')
     .on('init', function(event, slick) {
         $('.slider-nav .slick-slide.slick-current').addClass('is-active');
@@ -117,18 +108,15 @@ $('.slider-nav')
             }
         }]
     });
-
 $('.slider-single').on('afterChange', function(event, slick, currentSlide) {
     $('.slider-nav').slick('slickGoTo', currentSlide);
     var currrentNavSlideElem = '.slider-nav .slick-slide[data-slick-index="' + currentSlide + '"]';
     $('.slider-nav .slick-slide.is-active').removeClass('is-active');
     $(currrentNavSlideElem).addClass('is-active');
 });
-
 $('.slider-nav').on('click', '.slick-slide', function(event) {
     event.preventDefault();
     var goToSingleSlide = $(this).data('slick-index');
-
     $('.slider-single').slick('slickGoTo', goToSingleSlide);
 });
 </script>
