@@ -34,12 +34,12 @@ namespace LibraryWeb.Areas.Identity.Pages.Account
         public class InputModel
         {
             [Required]
-            [StringLength(7, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 6)]
+            [StringLength(7, ErrorMessage = "Код {0} должен от {2} до {1} символов.", MinimumLength = 6)]
             [DataType(DataType.Text)]
-            [Display(Name = "Authenticator code")]
+            [Display(Name = "Код двухфакторной аутентификации ")]
             public string TwoFactorCode { get; set; }
 
-            [Display(Name = "Remember this machine")]
+            [Display(Name = "Запомнить это устройство")]
             public bool RememberMachine { get; set; }
         }
 
@@ -50,7 +50,7 @@ namespace LibraryWeb.Areas.Identity.Pages.Account
 
             if (user == null)
             {
-                throw new InvalidOperationException($"Unable to load two-factor authentication user.");
+                throw new InvalidOperationException($"Невозможно авторизоваться через двухфакторную аутентификацию");
             }
 
             ReturnUrl = returnUrl;
@@ -71,7 +71,7 @@ namespace LibraryWeb.Areas.Identity.Pages.Account
             var user = await _signInManager.GetTwoFactorAuthenticationUserAsync();
             if (user == null)
             {
-                throw new InvalidOperationException($"Unable to load two-factor authentication user.");
+                throw new InvalidOperationException($"Невозможно получить доступ к пользователю в системе двухфакторной аутентификации ");
             }
 
             var authenticatorCode = Input.TwoFactorCode.Replace(" ", string.Empty).Replace("-", string.Empty);
@@ -91,7 +91,7 @@ namespace LibraryWeb.Areas.Identity.Pages.Account
             else
             {
                 _logger.LogWarning("Invalid authenticator code entered for user with ID '{UserId}'.", user.Id);
-                ModelState.AddModelError(string.Empty, "Invalid authenticator code.");
+                ModelState.AddModelError(string.Empty, "Не верный код авторизации");
                 return Page();
             }
         }
