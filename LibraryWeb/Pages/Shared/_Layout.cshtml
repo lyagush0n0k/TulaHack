@@ -55,10 +55,22 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-end">
-                    <ul class="nav col-lg-7 navbar-nav flex-grow-1">
-	                    <input class="search col-lg-10" type="text" placeholder="Введите название книги или автора" style="-webkit-border-radius: 25px;border-radius: 25px;border: 1px solid gray;max-width: 300px;margin:auto 0;padding: 0.5rem;height: 2.3125rem;margin-left: 15px; ">
-	                    <button class="btn button"  style="background: none;text-align: center;font-weight: 400;color: #212529;margin-bottom: 0px"  type="submit">Поиск</button>
-                    </ul>
+	                <ul class="nav col-lg-7 navbar-nav flex-grow-1">
+		                
+		                	<datalist id="okrug"> 
+                                                      <option value="Центральный федеральный округ"> </option>
+                                                      <option value="Северо-Западный федеральный округ">  </option>
+                                                      <option value="Южный федеральный округ">  </option>
+                                                      <option value="Северо-Кавказский федеральный округ">  </option>
+                                                      <option value="Приволжский федеральный округ">  </option>
+                                                      <option value="Уральский федеральный округ">  </option>
+                                                      <option value="Сибирский федеральный округ">  </option>
+                                                      <option value="Дальневосточный федеральный округ">  </option>
+                                                      </datalist> 
+                                                      
+		                <input class="search col-lg-10" list="okrug" type="text" placeholder="Введите название книги или автора" style="-webkit-border-radius: 25px;border-radius: 25px;border: 1px solid gray;max-width: 300px;margin:auto 0;padding: 0.5rem;height: 2.3125rem;margin-left: 15px; ">
+		                <button class="btn button" style="background: none;text-align: center;font-weight: 400;color: #212529;margin-bottom: 0px" type="submit">Поиск</button>
+	                </ul>
                     <partial name="_LoginPartial" />
                 </div>
             </div>
