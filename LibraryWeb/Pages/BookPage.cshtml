@@ -3,7 +3,14 @@
 
 @{
     Layout = "_Layout";
-    ViewData["Title"] = @Model.Book.Name;
+    @if (Model.Book != null)
+    {
+        ViewData["Title"] = @Model.Book.Name;
+    }
+    else
+    {
+        ViewData["Title"] = "Книги не существует";
+    }
 }
 
 <!DOCTYPE html>
@@ -27,7 +34,14 @@
 
 <body>
 	<div class=" content container">
-		<h2>@Model.Book.Name</h2>
+        @if (Model.Book != null)
+        {
+            <h2>@Model.Book.Name</h2>
+        }
+        else
+        {
+            <h2>Неверный ID</h2>
+        }
 		<span>Артикул: 76486488</span>
 		<br>
 
