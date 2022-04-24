@@ -49,15 +49,53 @@
 		<div class="row ">
 			<div class="column col-lg-6 col-md-12 small-11 small-centered">
 				<div class="slider slider-single">
-					<div><img src="/img/python.jpg" alt=""></div>
-					<div><img src="/img/ph_05.jpg" alt=""></div>
-					<div><img src="/img/slide-3.jpg" alt=""></div>
+                    @if (Model.Book != null)
+                    {
+                        @if (Model.Book.Img != null)
+                        {
+                            <div><img src="data:image/*;base64,@(Convert.ToBase64String(Model.Book.Img))" alt=""></div>
+					        <div><img src="~/img/@Model.Book.ID/2.png" alt=""></div>
+					        <div><img src="~/img/@Model.Book.ID/3.png" alt=""></div>
+                        }
+                        else
+                        {
+                            <div><img src="~/images/no_cover_available.png" alt=""></div>
+                            <div><img src="~/images/no_cover_available.png" alt=""></div>
+					        <div><img src="~/images/no_cover_available.png" alt=""></div>
+                        }
+                    }
+                    else
+                    {
+                        <div><img src="~/images/no_cover_available.png" alt=""></div>
+                        <div><img src="~/images/no_cover_available.png" alt=""></div>
+                        <div><img src="~/images/no_cover_available.png" alt=""></div>
+                    }
+                    
+					
 				</div>
 				<div class="slider slider-nav">
-					<div><img src="/img/python.jpg"  width="433px"alt=""></div>
-					<div><img src="/img/ph_05.jpg" alt=""></div>
-					<div><img src="/img/slide-3.jpg" alt=""></div>
-					
+                    @if (Model.Book != null)
+                    {
+                        @if (Model.Book.Img != null)
+                        {
+                            <div><img src="data:image/*;base64,@(Convert.ToBase64String(Model.Book.Img))" alt=""></div>
+					        <div><img src="~/img/@Model.Book.ID/2.png" alt=""></div>
+					        <div><img src="~/img/@Model.Book.ID/3.png" alt=""></div>
+                        }
+                        else
+                        {
+                            <div><img src="~/images/no_cover_available.png" alt=""></div>
+                            <div><img src="~/images/no_cover_available.png" alt=""></div>
+					        <div><img src="~/images/no_cover_available.png" alt=""></div>
+                        }
+                    }
+                    else
+                    {
+                        <div><img src="~/images/no_cover_available.png" alt=""></div>
+                        <div><img src="~/images/no_cover_available.png" alt=""></div>
+                        <div><img src="~/images/no_cover_available.png" alt=""></div>
+                    }
+
 				</div>
 			</div>
 			<div class="about offset-lg-1 col-md-12 col-lg-5">
