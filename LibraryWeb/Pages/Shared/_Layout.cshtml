@@ -58,18 +58,13 @@
 	                <ul class="nav col-lg-7 navbar-nav flex-grow-1">
 		                
 		                	<datalist id="okrug"> 
-                                                      <option value="Центральный федеральный округ"> </option>
-                                                      <option value="Северо-Западный федеральный округ">  </option>
-                                                      <option value="Южный федеральный округ">  </option>
-                                                      <option value="Северо-Кавказский федеральный округ">  </option>
-                                                      <option value="Приволжский федеральный округ">  </option>
-                                                      <option value="Уральский федеральный округ">  </option>
-                                                      <option value="Сибирский федеральный округ">  </option>
-                                                      <option value="Дальневосточный федеральный округ">  </option>
+                                                      <option value="Программирование"></option>
+                                                      <option value="Фантастика"></option>
+                                                      
                                                       </datalist> 
                                                       
 		                <input class="search col-lg-10" list="okrug" type="text" placeholder="Введите название книги или автора" style="-webkit-border-radius: 25px;border-radius: 25px;border: 1px solid gray;max-width: 300px;margin:auto 0;padding: 0.5rem;height: 2.3125rem;margin-left: 15px; ">
-		                <button class="btn button" style="background: none;text-align: center;font-weight: 400;color: #212529;margin-bottom: 0px" type="submit">Поиск</button>
+		                <a asp-page="/Books"><button class="btn button" style="background: none;text-align: center;font-weight: 400;color: #212529;margin-bottom: 0px" type="submit">Поиск</button></a>
 	                </ul>
                     <partial name="_LoginPartial" />
                 </div>
