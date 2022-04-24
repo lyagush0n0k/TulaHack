@@ -1,0 +1,33 @@
+﻿@page
+@model BooksModel
+@{
+    ViewData["Title"] = "Все книги";
+}
+
+<div class="row">
+    @foreach(var item in Model.Book)
+    {
+        <div class="col-12 col-sm-6 col-lg-4">
+            <a asp-page="/BookPage" asp-route-id="@item.ID">
+            <div class="card-deck">
+                <div class="card m-3">
+                    <div class="text-center">
+                        @if (item.Img != null)
+                        {
+                            <img id="profilePicture" style="width: 198px; height: 280px; object-fit:cover" src="data:image/*;base64,@(Convert.ToBase64String(item.Img))">
+                        }
+                        else
+                        {
+                            <img id="profilePicture" style="width: 198px; height: 280px; object-fit:cover" src="~/img/no_cover_avaibale.png">
+                        }
+                        
+                    </div>
+                    <div class="card-footer text-center">
+                        @item.Name
+                    </div>
+                </div>
+            </div>
+            </a>
+        </div>
+    }
+</div>

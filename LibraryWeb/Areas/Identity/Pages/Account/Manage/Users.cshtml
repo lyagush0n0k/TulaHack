@@ -45,11 +45,11 @@
                 @Html.DisplayFor(modelItem => item.Email)
             </td>
             <td>
-                <a asp-page="./BookManager/Edit" asp-route-id="@item.Id">Редактировать</a>
+                <a asp-page="./UserManager/Edit" asp-route-id="@item.Id">Редактировать</a>
                 <br/>
-                <a asp-page="./BookManager/Details" asp-route-id="@item.Id">Подробности</a>
+                <a asp-page="./UserManager/Details" asp-route-id="@item.Id">Подробности</a>
                 <br/>
-                <a asp-page="./BookManager/Delete" asp-route-id="@item.Id">Удалить</a>
+                <a asp-page="./UserManager/Delete" asp-route-id="@item.Id">Удалить</a>
             </td>
         </tr>
 }

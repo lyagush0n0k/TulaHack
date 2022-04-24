@@ -58,8 +58,4 @@
     <None Include="wwwroot\font-awesome-4.7.0\scss\_variables.scss" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Areas\Identity\Pages\Account\Manage\UserManager\" />
-  </ItemGroup>
-
 </Project>

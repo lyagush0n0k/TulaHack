@@ -13,53 +13,26 @@
 <table class="table">
     <thead>
         <tr>
-            <th>
-                Id
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Book[0].Name)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Book[0].Author)
-            </th>
-            <th>
-                Издатель
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Book[0].Type)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Book[0].Date)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Book[0].Languages)
-            </th>
+            <th>Id</th>
+            <th>Название</th>
+            <th>Автор</th>
+            <th>Жанр</th>
+            <th>Дата выхода</th>
+            <th>Язык</th>
+            <th>Количество</th>
+            <th></th>
         </tr>
     </thead>
     <tbody>
 @foreach (var item in Model.Book) {
         <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.ID)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Author)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Publish)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Type)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Date)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Languages)
-            </td>
+            <td>@Html.DisplayFor(modelItem => item.ID)</td>
+            <td>@Html.DisplayFor(modelItem => item.Name)</td>
+            <td>@Html.DisplayFor(modelItem => item.Author)</td>
+            <td>@Html.DisplayFor(modelItem => item.Type)</td>
+            <td>@Html.DisplayFor(modelItem => item.Date)</td>
+            <td>@Html.DisplayFor(modelItem => item.Languages)</td>
+            <td>@Html.DisplayFor(modelItem => item.Count)</td>
             <td>
                 <a asp-page="./BookManager/Edit" asp-route-id="@item.ID">Редактировать</a>
                 <br/>

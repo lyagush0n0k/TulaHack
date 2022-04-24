@@ -1,0 +1,56 @@
+﻿@page
+@model LibraryWeb.Areas.Identity.Pages.Account.Manage.UserManager.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Информация</h1>
+
+<div>
+    <h4>@Html.DisplayFor(model => model.User.FirstName) @Html.DisplayFor(model => model.User.LastName)</h4>
+    <hr />
+    <div class="row align-items-start">
+        <div class="col flex-grow-0">
+             @if (Model.User.ProfilePicture != null)
+                {
+                    <img id="profilePicture" style="width: 297px; height: 420px;  object-fit:cover" src="data:image/*;base64,@(Convert.ToBase64String(Model.User.ProfilePicture))">
+                }
+                else
+                {
+                    <img id="profilePicture" style="width: 297px; height: 420px;  object-fit:cover" src="~/images/no_cover_available.png">
+                }
+        </div>
+        <div class="col flex-grow-1">
+            <table class="iksweb">
+	            <tbody>
+		            <tr style="height: 40px;">
+		            	<td style="width: 125px;">Id</td>
+			            <td>@Html.DisplayFor(model => model.User.Id)</td>
+		            </tr>
+            		<tr style="height: 40px;">
+            			<td style="width: 125px;">Почта</td>
+            			<td>@Html.DisplayFor(model => model.User.Email)</td>
+            		</tr>
+            		<tr style="height: 40px;">
+            			<td style="width: 125px;">Email потдвержден</td>
+            			<td>@Html.DisplayFor(model => model.User.EmailConfirmed)</td>
+            		</tr>
+            		<tr style="height: 40px;">
+            			<td style="width: 125px;">Номер телефона</td>
+            			<td>@Html.DisplayFor(model => model.User.PhoneNumber)</td>
+            		</tr>
+	            </tbody>
+            </table>
+        </div>
+    </div>
+    <br />
+    <div>
+        <h5>Книги</h5>
+        <p></p>
+    </div>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.User.Id">Edit</a> |
+    <a asp-page="../Users">Вернуться назад</a>
+</div>
