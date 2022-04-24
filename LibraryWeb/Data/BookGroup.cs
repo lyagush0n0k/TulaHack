@@ -38,6 +38,7 @@ namespace LibraryWeb.Models
         IndustrialDesign,
         [Display(Name = "Искусство")]
         Art,
-
+        [Display(Name = "Нет")]
+        None
     }
 }
