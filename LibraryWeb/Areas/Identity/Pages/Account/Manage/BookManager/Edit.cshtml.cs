@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using LibraryWeb.Data;
 using LibraryWeb.Models;
+using Microsoft.AspNetCore.Http;
+using System.IO;
 
 namespace LibraryWeb.Areas.Identity.Pages.Account.Manage.BookManager
 {
@@ -49,6 +51,16 @@ namespace LibraryWeb.Areas.Identity.Pages.Account.Manage.BookManager
             }
 
             _context.Attach(Book).State = EntityState.Modified;
+
+            if (Request.Form.Files.Count > 0)
+            {
+                IFormFile file = Request.Form.Files.FirstOrDefault();
+                using (var dataStream = new MemoryStream())
+                {
+                    await file.CopyToAsync(dataStream);
+                    Book.Img = dataStream.ToArray();
+                }
+            }
 
             try
             {

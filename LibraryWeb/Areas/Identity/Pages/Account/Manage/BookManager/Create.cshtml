@@ -6,54 +6,68 @@
     ViewData["Title"] = "Создать книгу";
 }
 
-
-
 <h4>Добавить книгу</h4>
 <hr />
-<div class="row">
-    <div class="col-md-4">
-        <form method="post" enctype="multipart/form-data">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label class="control-label">Имя книги</label>
-                <input asp-for="Book.Name" class="form-control" />
+<div class="row align-items-start">
+    <form method="post" enctype="multipart/form-data">
+        <div class="row align-items-start col-md">
+            <div class="col flex-grow-0">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <img id="bookImage" style="width: 297px;height: 420px; object-fit:cover" src="~/images/NullAvatar.webp">
+                    <input type="file"
+                           accept=".png,.jpg,.jpeg,.gif,.tif"
+                           asp-for="Book.Img"
+                           class="btn"
+                           style="border:0px!important;padding: 0px;padding-top: 10px; padding-bottom: 30px; width: 350px;"
+                           onchange="document.getElementById('bookImage').src = window.URL.createObjectURL(this.files[0])" />
+                    <span asp-validation-for="Book.Img" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label class="control-label">Имя книги</label>
+                    <input asp-for="Book.Name" class="form-control" />
                 <span asp-validation-for="Book.Name" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Автор книги</label>
+                    <input asp-for="Book.Author" class="form-control" />
+                    <span asp-validation-for="Book.Author" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Издатель</label>
+                    <input asp-for="Book.Publish" class="form-control" />
+                    <span asp-validation-for="Book.Publish" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Описание</label>
+                    <input asp-for="Book.Description" class="form-control" />
+                    <span asp-validation-for="Book.Description" class="text-danger"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label class="control-label">Тип книги</label>
+                    <select asp-for="Book.Type" asp-items="Html.GetEnumSelectList<BookGroup>()" class="form-control"></select>
+                    <span asp-validation-for="Book.Type" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Год выпуска</label>
+                    <input asp-for="Book.Date" class="form-control" />
+                    <span asp-validation-for="Book.Date" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Язык книги</label>
+                    <select asp-for="Book.Languages" asp-items="Html.GetEnumSelectList<Language>()" class="form-control"></select>
+                    <span asp-validation-for="Book.Languages" class="text-danger"></span>
+                </div>
             </div>
-            <div class="form-group">
-                <label class="control-label">Автор книги</label>
-                <input asp-for="Book.Author" class="form-control" />
-                <span asp-validation-for="Book.Author" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label class="control-label">Издатель</label>
-                <input asp-for="Book.Publish" class="form-control" />
-                <span asp-validation-for="Book.Publish" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label class="control-label">Обложка</label>
-                <input asp-for="Book.Img" class="form-control" />
-                <span asp-validation-for="Book.Img" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label class="control-label">Тип книги</label>
-                <select asp-for="Book.Type" asp-items="Html.GetEnumSelectList<BookGroup>()" class="form-control"></select>
-                <span asp-validation-for="Book.Type" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label class="control-label">Год выпуска</label>
-                <input asp-for="Book.Date" class="form-control" />
-                <span asp-validation-for="Book.Date" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label class="control-label">Язык книги</label>
-                <select asp-for="Book.Languages" asp-items="Html.GetEnumSelectList<Language>()" class="form-control"></select>
-                <span asp-validation-for="Book.Languages" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
-    </div>
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Create" class="btn btn-primary" />
+        </div>
+    </form>
 </div>
 
 <div>

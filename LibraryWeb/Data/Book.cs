@@ -1,5 +1,4 @@
-﻿using LibraryWeb.Data;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,11 +16,6 @@ namespace LibraryWeb.Models
         public uint Date { get; set; }
         public Language Languages { get; set; }
         public string Publish { get; set; }
-        public ApplicationUser User { get; set; }
-
-        public Book()
-        {
-            this.User = new ApplicationUser();
-        }
+        public string Description { get; set; }
     }
 }

@@ -49,14 +49,14 @@
 			<div class="about offset-lg-1 col-md-12 col-lg-5">
 				<br>
 				<h2 class="h2">Описание</h2>
-				<p>“Беспрецедентное современное руководство, отражающее эту богатую междисциплинарную природу под редакцией одного из признанных мастеров в этой области Томаса Россинга...</p>
+				<p>"@Html.DisplayFor(model => model.Book.Description)"</p>
 				<h2>Характеристики</h2>
 				<div class="charact">
-					<p>Автор: @Model.Book.Author</p>
-					<p>Жанр: @Model.Book.Type</p>	 
-					<p>Издательство: @Model.Book.Publish</p>	
-					<p>Год выпуска: @Model.Book.Date</p>		
-					<p>Язык: @Model.Book.Languages</p>
+					<p>Автор: @Html.DisplayFor(model => model.Book.Author)</p>
+					<p>Жанр: @Html.DisplayFor(model => model.Book.Type)</p>	 
+					<p>Издательство: @Html.DisplayFor(model => model.Book.Publish)</p>	
+					<p>Год выпуска: @Html.DisplayFor(model => model.Book.Date)</p>		
+					<p>Язык: @Html.DisplayFor(model => model.Book.Languages)</p>
 					  
 				</div>
 				
