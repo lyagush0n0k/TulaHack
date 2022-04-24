@@ -18,5 +18,18 @@ namespace LibraryWeb.Models
         public Language Languages { get; set; }
         public string Publish { get; set; }
         public string Description { get; set; }
+
+        public void AddBook()
+        {
+            this.Count++;
+        }
+
+        public void RemoveBook()
+        {
+            if (this.Count != 0)
+            {
+                this.Count--;
+            }
+        }
     }
 }
