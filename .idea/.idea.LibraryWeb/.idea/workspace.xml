@@ -8,11 +8,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35c3aa90-f44e-44c2-8f3a-bc8c4e2eb3d9" name="Changes" comment="Search">
+    <list default="true" id="35c3aa90-f44e-44c2-8f3a-bc8c4e2eb3d9" name="Changes" comment="Fiter">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LibraryWeb/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LibraryWeb/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryWeb/Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryWeb/Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LibraryWeb/Pages/Books.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryWeb/Pages/Books.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibraryWeb/Pages/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryWeb/Pages/Shared/_Layout.cshtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +22,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="mock://C:/Users/romas/RiderProjects/TulaHack/LibraryWeb/Areas/Identity/Pages/Account/Manage/DeletePersonalData.cshtml.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/romas/RiderProjects/TulaHack/LibraryWeb/Pages/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/romas/RiderProjects/TulaHack/LibraryWeb/Pages/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/LibraryWeb/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/LibraryWeb/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map" root0="FORCE_HIGHLIGHTING" />
@@ -226,7 +225,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650789440541</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Fiter">
+      <created>1650792285102</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1650792285102</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -639,6 +645,7 @@
     <MESSAGE value="Translate 0.7" />
     <MESSAGE value="translate 0.8" />
     <MESSAGE value="Search" />
-    <option name="LAST_COMMIT_MESSAGE" value="Search" />
+    <MESSAGE value="Fiter" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fiter" />
   </component>
 </project>
