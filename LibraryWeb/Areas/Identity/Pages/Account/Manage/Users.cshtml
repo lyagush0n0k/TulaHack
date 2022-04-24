@@ -1,0 +1,57 @@
+﻿@page
+@using LibraryWeb.Areas.Identity.Pages.Account.Manage
+@model UsersModel
+@{
+    ViewData["Title"] = "Role Manager";
+    ViewData["ActivePage"] = ManageNavPages.Users;
+}
+
+<p>
+    <a asp-page="./BookManager/Create">Добавить пользователя</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Фото
+            </th>
+            <th>
+                Имя и фамилия
+            </th>
+            <th>
+                Почта
+            </th>
+            <th>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.User) {
+        <tr>
+            <td>
+                @if (item.ProfilePicture != null)
+                {
+                    <img id="profilePicture" style="width: 175px; height: 175px; object-fit:cover" src="data:image/*;base64,@(Convert.ToBase64String(item.ProfilePicture))">
+                }
+                else
+                {
+                    <img id="profilePicture" style="width: 175px; height: 175px; object-fit:cover" src="~/images/NullAvatar.webp">
+                }
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FirstName) @Html.DisplayFor(modelItem => item.LastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                <a asp-page="./BookManager/Edit" asp-route-id="@item.Id">Редактировать</a>
+                <br/>
+                <a asp-page="./BookManager/Details" asp-route-id="@item.Id">Подробности</a>
+                <br/>
+                <a asp-page="./BookManager/Delete" asp-route-id="@item.Id">Удалить</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

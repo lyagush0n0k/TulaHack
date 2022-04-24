@@ -28,9 +28,13 @@ namespace LibraryWeb.Areas.Identity.Pages.Account.Manage
 
         public static string BookManager => "BookManager";
 
+        public static string Users => "Users";
+
         public static string RoleManagerNavClass(ViewContext viewContext) => PageNavClass(viewContext, RoleManager);
 
         public static string BookManagerNavClass(ViewContext viewContext) => PageNavClass(viewContext, BookManager);
+
+        public static string UsersNavClass(ViewContext viewContext) => PageNavClass(viewContext, Users);
 
         public static string IndexNavClass(ViewContext viewContext) => PageNavClass(viewContext, Index);
 

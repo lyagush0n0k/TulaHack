@@ -14,6 +14,7 @@ namespace LibraryWeb.Models
         public byte[] Img { get; set; }
         public BookGroup Type { get; set; }
         public uint Date { get; set; }
+        public uint Count { get; set; }
         public Language Languages { get; set; }
         public string Publish { get; set; }
         public string Description { get; set; }

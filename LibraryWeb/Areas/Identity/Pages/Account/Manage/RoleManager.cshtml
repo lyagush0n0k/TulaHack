@@ -1,12 +1,36 @@
 ﻿@page
+@using LibraryWeb.Areas.Identity.Pages.Account.Manage
 @model RoleManagerModel
 @{
     ViewData["Title"] = "Role Manager";
     ViewData["ActivePage"] = ManageNavPages.RoleManager;
 }
 
-<h3>@ViewData["Title"]</h3>
-
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Roles</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model.userRolesViewModel)
+        {
+        <tr>
+            <td>@user.FirstName</td>
+            <td>@user.LastName</td>
+            <td>@user.Email</td>
+            <td>@string.Join(" , ", user.Roles.ToList())</td>
+            <td>
+                <a class="btn btn-primary" asp-page="./RoleManager/ManageRole" asp-route-userId="@user.UserId">Manage Roles</a>
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>
 
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
